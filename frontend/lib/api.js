@@ -1,4 +1,4 @@
-const BASE = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000").replace(/\/$/, "");
+const BASE = (process.env.NEXT_PUBLIC_API_URL || "https://uniskill-ai.onrender.com").replace(/\/$/, "");
 
 export const getToken = () => (typeof window === "undefined" ? null : localStorage.getItem("token"));
 export const getUser = () => {
